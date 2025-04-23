@@ -41,7 +41,7 @@ This ensures seamless communication between the PostgreSQL and Streamlit contain
 
 ```sh
 docker run --name my_postgres_container --network my_postgres_network \
-    -e POSTGRES_USER=aryan -e POSTGRES_PASSWORD=secret -e POSTGRES_DB=testdb \
+    -e POSTGRES_USER=gaurav -e POSTGRES_PASSWORD=secret -e POSTGRES_DB=testdb \
     -p 5432:5432 -d postgres
 ```
 
@@ -58,7 +58,7 @@ docker run --name my_postgres_container --network my_postgres_network \
 ### 4️⃣ Access PostgreSQL Inside the Container
 
 ```sh
-docker exec -it my_postgres_container psql -U aryan -d testdb
+docker exec -it my_postgres_container psql -U gaurav -d testdb
 ```
 
 ### 5️⃣ Create a `passengers` Table
